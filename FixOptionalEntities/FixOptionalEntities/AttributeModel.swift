@@ -14,7 +14,7 @@ class AttributeModel: NSObject {
     var optionalValue : Bool!
     var attributeFinalType:String!{
         get{
-            if attributeType == "Integer 32" || attributeType == "Float" || attributeType == "Integer 16" {
+            if attributeType == "Integer 32" || attributeType == "Float" || attributeType == "Integer 16" || attributeType == "Boolean" {
                 return "NSNumber"
             }
             

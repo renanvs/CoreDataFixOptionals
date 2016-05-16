@@ -53,7 +53,7 @@ class ChangeClassManager: NSObject {
             }
             
             do{
-                try classStr.writeToFile("\(NSBundle.mainBundle().bundlePath)/\(entityModel.name)+CoreDataProperties2.swift", atomically: true, encoding: NSUTF8StringEncoding)
+                try classStr.writeToFile("\(NSBundle.mainBundle().bundlePath)/\(entityModel.name)+CoreDataProperties.swift", atomically: true, encoding: NSUTF8StringEncoding)
             }catch{
                 print("err 2")
             }
